@@ -1,0 +1,1099 @@
+<!DOCTYPE html><html class="no-js" lang="zxx"><head>
+    <meta charset="utf-8">
+    <meta content="ie=edge" http-equiv="x-ua-compatible">
+    <title>Jeet - Business Consulting HTML5 Template</title>
+    <meta content="Jeet - Business Consulting HTML5 Template" name="description">
+    <meta content="Jeet - Business Consulting HTML5 Template" name="keywords">
+    <meta content="INDEX,FOLLOW" name="robots">
+
+    <!-- Mobile Specific Metas -->
+    <meta content="width=device-width, initial-scale=1, shrink-to-fit=no" name="viewport">
+
+    <!-- Favicons - Place favicon.ico in the root directory -->
+    <link href="images/favicon.png" rel="icon" sizes="32x32" type="image/png">
+    <meta content="#ffffff" name="msapplication-TileColor">
+    <meta content="#ffffff" name="theme-color">
+
+    <!--==============================
+	  Google Fonts
+	============================== -->
+    <link href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap" rel="stylesheet">
+
+    <!--==============================
+	    All CSS File
+	============================== -->
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+    <link href="css/fontawesome.min.css" rel="stylesheet">
+    <link href="css/fancybox.min.css" rel="stylesheet">
+    <link href="css/swiper-bundle.min.css" rel="stylesheet">
+    <link href="css/animate.min.css" rel="stylesheet">
+    <link href="css/select2.min.css" rel="stylesheet">
+    <link href="css/aos.css" rel="stylesheet">
+    <link href="css/jquery-ui.min.css" rel="stylesheet">
+    <link href="css/odometer.css" rel="stylesheet">
+    <!-- Theme Custom CSS -->
+    <link href="css/style.css" rel="stylesheet">
+    <style>
+        /* Portfolio Section */
+.pdesigner-portfolio__item {
+    position: relative;
+    overflow: hidden;
+    border-radius: 10px;
+    background: #000;
+}
+
+.pdesigner-portfolio__item a {
+    display: block;
+    position: relative;
+    overflow: hidden;
+    height: 350px;
+}
+
+.pdesigner-portfolio__item img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    object-position: center;
+    transition: transform 0.5s ease;
+}
+
+.pdesigner-portfolio__item:hover img {
+    transform: scale(1.1);
+}
+
+/* Contenido overlay */
+.pdesigner-portfolio__content {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background: linear-gradient(to top, rgba(0,0,0,0.9) 0%, rgba(0,0,0,0.6) 60%, transparent 100%);
+    padding: 25px 20px;
+    opacity: 0;
+    transform: translateY(20px);
+    transition: all 0.4s ease;
+}
+
+.pdesigner-portfolio__item:hover .pdesigner-portfolio__content {
+    opacity: 1;
+    transform: translateY(0);
+}
+
+.pdesigner-portfolio__content ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.pdesigner-portfolio__content li {
+    margin-bottom: 5px;
+}
+
+.pdesigner-portfolio__title {
+    color: #fff;
+    font-size: 18px;
+    font-weight: 600;
+    text-decoration: none;
+}
+
+.pdesigner-portfolio__title:hover {
+    color: #00ff88;
+}
+
+.pdesigner-portfolio__category {
+    color: #00ff88;
+    font-size: 14px;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+}
+
+/* Ajustes por imagen */
+.grid-item:nth-child(1) img {
+    object-position: center 30%;
+}
+
+.grid-item:nth-child(2) img {
+    object-position: center 25%;
+}
+
+.grid-item:nth-child(3) img {
+    object-position: center 30%;
+}
+
+.grid-item:nth-child(4) img {
+    object-position: center;
+}
+
+.grid-item:nth-child(5) img {
+    object-position: center 40%;
+}
+
+/* Espaciado */
+.row.gy-30 {
+    row-gap: 30px;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+    .pdesigner-portfolio__item a {
+        height: 280px;
+    }
+}
+        .about-left-img {
+            position: relative;
+        }
+
+        .about-left-img .shape {
+            position: relative;
+            z-index: 2;
+            pointer-events: none;
+        }
+
+        .about-left-img .about-thumb {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            z-index: 1;
+            clip-path: polygon(50% 0%, 100% 25%, 100% 75%, 50% 100%, 0% 75%, 0% 25%);
+            overflow: hidden;
+        }
+
+        .about-left-img .about-thumb img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            transition: transform 0.3s ease;
+        }
+
+        /* Efecto 3D al pasar el mouse */
+        .about-left-img .about-thumb:hover img {
+            transform: perspective(1000px) rotateY(5deg) rotateX(5deg) scale(1.05);
+        }
+
+        .about-rotated-box {
+            position: absolute;
+            bottom: -30px;
+            left: 50%;
+            transform: translateX(-50%);
+            z-index: 3;
+        }
+
+        /* Asegurar que el botón esté visible y bien posicionado */
+        .about-btn {
+            margin-top: 20px;
+        }
+
+        .theme-btn {
+            display: inline-flex;
+            align-items: center;
+            gap: 10px;
+            padding: 15px 30px;
+            background: #00ff88;
+            color: #000;
+            text-decoration: none;
+            font-weight: bold;
+            border-radius: 5px;
+            transition: all 0.3s ease;
+        }
+
+        .theme-btn:hover {
+            background: #00cc6f;
+            transform: translateY(-2px);
+            box-shadow: 0 5px 15px rgba(0, 255, 136, 0.3);
+        }
+
+        .link-effect {
+            position: relative;
+            overflow: hidden;
+            display: block;
+        }
+
+        .effect-1 {
+            display: block;
+            transition: transform 0.3s ease;
+        }
+
+        .theme-btn:hover .effect-1:first-child {
+            transform: translateY(-100%);
+        }
+
+        .theme-btn:hover .effect-1:last-child {
+            transform: translateY(-100%);
+        }
+
+        .effect-1:last-child {
+            position: absolute;
+            top: 100%;
+            left: 0;
+        }
+    </style>
+</head>
+
+<body id="body">
+
+    <div class="page-wrapper overflow-visible">
+
+        <!--==============================
+        Preloader
+        ==============================-->
+        <div id="preloader">
+            <div id="container" class="container-preloader">
+                <div class="animation-preloader">
+                    <div class="spinner"></div>
+                    <div class="txt-loading">
+                        <span data-text="O" class="characters">O</span>
+                        <span data-text="D" class="characters">D</span>
+                        <span data-text="I" class="characters">I</span>
+                        <span data-text="S" class="characters">S</span>
+                    </div>
+                </div>
+                <div class="loader-section section-left"></div>
+                <div class="loader-section section-right"></div>
+            </div>
+        </div>
+
+
+        <!--==============================
+        Mobile Menu
+        ============================== -->
+        <div class="mobile-menu-wrapper">
+            <div class="mobile-menu-area">
+                <button class="menu-toggle"><i class="fas fa-times"></i></button>
+                <div class="mobile-logo">
+                    <a href="index.html"><img alt="jeet" src="images/site-logo-light.png"></a>
+                </div>
+                <div class="mobile-menu">
+                    <ul class="navigation clearfix">
+                        <!--Keep This Empty / Menu will come through Javascript-->
+                    </ul>
+                </div>
+                <div class="sidebar-wrap">
+                    <h6>La Chorrera, Panama</h6>
+                    <h6>Capira, Panama</h6>
+                </div>
+                <div class="sidebar-wrap">
+                    <h6><a href="tel:1800123654987">+507 6960-3305</a></h6>
+                    <h6><a href="mailto:example@gmail.com">odismary.vasquez2025@
+mottach.superate.org.pa
+</a></h6>
+                </div>
+                <div class="social-btn style3">
+                    <a href="#">
+                        <span class="link-effect">
+                            <span class="effect-1"><i class="fab fa-facebook"></i></span>
+                            <span class="effect-1"><i class="fab fa-facebook"></i></span>
+                        </span>
+                    </a>
+                    <a href="#">
+                        <span class="link-effect">
+                            <span class="effect-1"><i class="fab fa-instagram"></i></span>
+                            <span class="effect-1"><i class="fab fa-instagram"></i></span>
+                        </span>
+                    </a>
+                    <a href="#">
+                        <span class="link-effect">
+                            <span class="effect-1"><i class="fa-brands fa-x-twitter"></i></span>
+                            <span class="effect-1"><i class="fa-brands fa-x-twitter"></i></span>
+                        </span>
+                    </a>
+                    <a href="#">
+                        <span class="link-effect">
+                            <span class="effect-1"><i class="fab fa-dribbble"></i></span>
+                            <span class="effect-1"><i class="fab fa-dribbble"></i></span>
+                        </span>
+                    </a>
+                </div>
+            </div>
+        </div>
+
+        <!--==============================
+        Header Area
+        ==============================-->
+        <header class="header-style-one">
+            <div class="sticky-wrapper">
+                <div class="container">
+                    <div class="menu-area">
+                        <div class="row align-items-center justify-content-between">
+                            <div class="col-auto logo">
+                                <div class="header-logo">
+                                    <a href="index.html"><img src="images/site-logo-light.png" class="show-dark" alt="site-logo"></a>
+                                </div>
+                            </div>
+                            <div class="col-auto nav-menu">
+                                <div class="header-nav">
+                                    <ul class="navigation">
+                                        <li class="active"><a href="index.html"><i class="fa-regular fa-house"></i>Home</a>
+                                            <ul class="sub-menu">
+                                                <li class="active"><a href="index.html">Home One</a></li>
+                                              
+                                            </ul>
+                                        </li>
+                                        <li><a href="#about"><i class="fa-regular fa-user"></i>About</a></li>
+                                        <li><a href="#portfolio"><i class="fa-regular fa-file-lines"></i>BLOG</a></li>
+                                        <li><a href="#contact"><i class="fa-regular fa-envelope-open"></i>CONTACT</a></li>
+                                    </ul>
+                                </div>
+                                <button class="header__navicon-2 menu-toggle"><img src="images/menu-icon-white.png" alt=""></button>
+                            </div>
+                            <div class="col-auto header-right-wrapper">
+                                <button class="sidebar-trigger open">
+                                    <img src="images/header-menu-icon.png" alt="">
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </header>
+
+
+
+
+        <!--==============================
+        Sticky Header
+        ============================== -->
+        <div class="sticky-header lm-d-none">
+            <div class="container">
+                <!-- Main Menu Area -->
+                <div class="menu-area">
+                    <div class="row align-items-center justify-content-between">
+                        <div class="col-auto logo">
+                            <div class="header-logo">
+                                <a href="index.html">
+                                    <img alt="logo" src="images/site-logo-light.png">
+                                </a>
+                            </div>
+                        </div>
+                        <div class="col-auto nav-menu">
+                            <nav class="header-nav">
+                                <ul class="navigation clearfix">
+                                    <!--Keep This Empty / Menu will come through Javascript-->
+                                </ul>
+                            </nav>                      <div class="navbar-right d-inline-flex d-lg-none">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+
+         <!--========  Start Sidebar Area ========-->
+         <div id="sidebar-area" class="sidebar">
+            <div class="sidebar-overlay"></div>
+            <div class="sidebar-wrapper">
+                <button class="sidebar-close-btn">
+                    <svg class="icon-close" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="16px" height="12.7px" viewBox="0 0 16 12.7" style="enable-background:new 0 0 16 12.7" xml:space="preserve">
+                        <g>
+                            <rect x="0" y="5.4" transform="matrix(0.7071 -0.7071 0.7071 0.7071 -2.1569 7.5208)" width="16" height="2"></rect>
+                            <rect x="0" y="5.4" transform="matrix(0.7071 0.7071 -0.7071 0.7071 6.8431 -3.7929)" width="16" height="2"></rect>
+                        </g>
+                    </svg>
+                </button>
+                <div class="sidebar-content">
+                    <div class="sidebar-logo">
+                        <a class="dark-logo" href="index.html"><img src="images/site-logo-light.png" alt="logo"></a>
+                    </div>
+                    <div class="sidebar-menu-wrap"></div>
+                    <div class="sidebar-about">
+                        <div class="sidebar-header">
+                            <h3>About Me</h3>
+                        </div>
+                        <p>Efficient strategies for optimizing operational workflows are essential for business growth. Our team focuses on providing tailored solutions to enhance productivity and drive innovation.</p>
+                        <a href="contact.html" class="theme-btn">
+                            <span class="link-effect">
+                                <span class="effect-1">Contact Me</span>
+                                <span class="effect-1">Contact Me</span>
+                            </span>
+                        </a>
+                    </div>
+                    <div class="sidebar-contact">
+                        <div class="sidebar-header">
+                            <h3>Contact Us</h3>
+                        </div>
+                        <ul class="contact-info">
+                            <li>
+                                <i class="fas fa-map-marker-alt"></i>
+                                <p>Panama, La Chorrera</p>
+                            </li>
+                            <li>
+                                <i class="fas fa-phone"></i>
+                                <a href="tel:+181234567">+507 6960-3305</a>
+                            </li>
+                            <li>
+                                <i class="fas fa-envelope-open-text"></i>
+                                <a href="mailto:example@gmail.com">odismaryk00@gmail.com</a>
+                            </li>
+                        </ul>
+                    </div>
+                    <ul class="sidebar-social">
+                        <li class="facebook"><a href="#"><i class="fab fa-facebook-f"></i></a></li>
+                        <li class="instagram"><a href="#"><i class="fab fa-instagram"></i></a></li>
+                        <li class="twitter"><a href="#"><i class="fa-brands fa-x-twitter"></i></a></li>
+                        <li class="g-plus"><a href="#"><i class="fab fa-google-plus"></i></a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+        <!--======== / Sidebar Area ========-->
+
+
+            <!-- hero-section -->
+            <section class="hero-section pb-270" id="top">
+                <div class="container">
+                    <div class="row g-4">
+                        <div class="col-xl-6 col-lg-6 col-md-6">
+                            <div class="hero-left">
+                                <div class="pb-20">
+                                    <h1 class="title">Hello <span>🖐</span> </h1>
+                                    <div class="type-text">
+                                        I'M
+                                        <span id="typed_list">
+                                            <span>Odismary <span>VÁSQUEZ</span></span>
+                                            <span><span>graduate</span></span>
+                                        </span>
+                                        <span id="typed"></span>
+                                    </div>
+                                </div>
+                                <div class="pb-30">
+                                    <h2 class="hero-title" data-delay=".7">Humanities Student <br> <span> Based on Panama</span></h2>
+                                </div>
+                                <div class="hero-btn">
+                                    <a href="#" class="theme-btn bg-theme">
+                                        <span class="link-effect">
+                                            <span class="effect-1">View My Works</span>
+                                            <span class="effect-1">View My Works</span>
+                                        </span>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-xl-6 col-lg-6 col-md-6">
+                            <div class="hero-right">
+                                <div class="hero-right-text">
+                                    <div class="right-text">
+                                        <div class="img-shape spin2 mb-30">
+                                            <img src="images/9_1.png" alt="">
+                                        </div>
+                                        <span class="text-1">Expert On</span>
+                                        <p class="text-2 mt-15 mb-20">Academic and professional growth <br> Enthusiastic about teamwork, learning <br> and social impact projects.</p>
+                            <a href="#" class="download-btn" data-text="Download CV">
+                                Download CV
+                                <i class="fa-regular fa-arrow-down-to-line"></i>
+                            </a>
+                                        
+                                    </div>
+                                    <div class="hero-exprience">
+                                        <div class="work-compeleted">
+                                            <div class="count-box"><span class="count-number odometer" data-count="6"></span>+</div>
+                                            <p class="text">learned skills</p>
+                                        </div>
+                                        
+                                        </a></div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="hero-img lm-d-none"><img src="images/odis.png" alt=""></div>
+                    <div class="hero-image-shape lm-d-none"><img src="images/1.png" alt=""></div>
+                    <div class="hero-shape jump3"><img src="images/8.png" alt=""></div>
+                    <div class="hero-work-shape upDown"><img src="images/2.png" alt=""></div>
+                </div>
+            </section>
+
+            <!-- feature-section -->
+          <section class="feture-section space">
+    <div class="container">
+        <div class="row g-4">
+            <div class="col-lg-6">
+                <div class="title-area">
+                    <div class="sub-title"><i class="icon fa-brands fa-gg"></i>About Me</div>
+                    <h2 class="sec-title">Passionate student focused on <br>
+                        personal growth and teamwork to <br>
+                        achieve meaningful goals.
+                    </h2>
+                    <a href="#" class="feature-link">MORE ABOUT ME</a>
+                </div>
+            </div>
+            <div class="col-lg-6">
+                <ul class="feature-list">
+                    <li class="div-1"><a href="#"> <img src="images/service-icon.png" alt="">Leadership</a></li>
+                    <li class="div-2"><a href="#"> <img src="images/service-icon.png" alt="">Communication</a></li>
+                    <li class="div-3"><a href="#"> <img src="images/service-icon.png" alt="">Teamwork</a></li>
+                    <li class="div-4"><a href="#"> <img src="images/service-icon.png" alt="">Responsibility</a></li>
+                </ul>
+            </div>
+        </div>
+    </div>
+</section>
+
+            <!-- about-section -->
+           <section class="about-section space" id="about">
+    <div class="container">
+        <div class="row gy-80">
+            <div class="col-lg-6">
+                <div class="about-left-img">
+                    <img src="images/6.png" class="shape" alt="">
+                    <div class="about-thumb">
+                        <img data-tilt="" src="images/work.jpeg" class="about-me" alt="">
+                    </div>
+                    <div class="about-rotated-box">
+                        <div class="about-shape-2">
+                            <div class="circle-box">
+                                <div class="logo-box">
+                                    <img src="images/about-circle-icon.png" alt="">
+                                </div>
+                                <div class="text-inner">
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="250.5" height="250.5" viewBox="0 0 250.5 250.5">
+                                        <path d="M.25,125.25a125,125,0,1,1,125,125,125,125,0,0,1-125-125" id="e-path-35ee1b2"></path>
+                                        <text>
+                                            <textPath id="e-text-path-35ee1b2" href="#e-path-35ee1b2" startOffset="0%">
+                                                DOWNLOAD CV . DOWNLOAD CV . DOWNLOAD CV .
+                                            </textPath>
+                                        </text>
+                                    </svg>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-6">
+                <div class="about-right">
+                    <div class="title-area">
+                        <div class="sub-title"><i class="icon fa-brands fa-gg"></i>Introduce</div>
+                        <h2 class="sec-title">Every great project begins with <br> a strong creative vision</h2>
+                        <p class="pb-20">
+                            I’m Odismary Vásques, a passionate student and future engineer. <br>
+                            I enjoy working on robotics, technology, and innovative design ideas <br>
+                            that blend creativity with problem-solving.
+                        </p>
+                    </div>
+                    <ul class="about-list pb-50">
+                        <li class="div-1"><img src="images/about-logo.png" alt="">Odismary Vásques</li>
+                        <li class="div-2"><img src="images/about-logo.png" alt="">odismaryk00@gmail.com</li>
+                        <li class="div-3"><img src="images/about-logo.png" alt="">+507 6960-3305</li>
+                        <li class="div-4"><img src="images/about-logo.png" alt="">Panama, La Chorrera</li>
+                    </ul>
+                   <div class="about-btn">
+    <a href="https://drive.google.com/file/d/12tN9lsWXPejL_IvO7vTGZzcDaMLylo2R/view?usp=drivesdk" 
+       class="theme-btn bg-theme" 
+       target="_blank" 
+       rel="noopener noreferrer">
+        <span class="link-effect">
+            <span class="effect-1">DOWNLOAD CV</span>
+            <span class="effect-1">DOWNLOAD CV</span>
+        </span>
+        <i class="fa-solid fa-arrow-down-to-line"></i>
+    </a>
+</div>
+
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<svg style="visibility: hidden; position: absolute;" width="50" height="50" xmlns="http://www.w3.org/2000/svg" version="1.1">
+    <defs>
+        <filter id="round">
+            <feGaussianBlur in="SourceGraphic" stdDeviation="15" result="blur"></feGaussianBlur>
+            <feColorMatrix in="blur" values="1 0 0 0 0 0 1 0 0 0 0 0 1 0 0 0 0 0 19 -9" result="goo"></feColorMatrix>
+            <feComposite in="SourceGraphic" in2="goo" operator="atop"></feComposite>
+        </filter>
+    </defs>
+</svg>
+
+
+            <!-- resume-section -->
+            <section class="resume-section pt-120" id="resume">
+    <div class="container">
+        <div class="row">
+            <div class="col-lg-12">
+                <div class="title-area three text-center">
+                    <div class="sub-title"><i class="icon fa-brands fa-gg"></i>resume</div>
+                    <h2 class="sec-title">Crafting a Journey of Growth,<br> Skills, and Purpose</h2>
+                </div>
+            </div>
+            <div class="col-lg-12">
+                <div class="developer-resume_tab-wrapper space-bottom">
+                    <div class="developer-resume__tab-menu">
+                        <ul>
+                            <li><a href="#" data-rel="resume-tab-1" class="active">experience</a></li>
+                            <li><a href="#" data-rel="resume-tab-2" class="">education</a></li>
+                            <li><a href="#" data-rel="resume-tab-3" class="">skills</a></li>
+                            <li><a href="#" data-rel="resume-tab-4" class="">awards</a></li>
+                        </ul>
+                    </div>
+
+                    <div class="developer-resume_tab-list">
+
+                        <!-- ---------------- EXPERIENCE ---------------- -->
+                        <div class="developer-resume-tab-box" id="resume-tab-1" style="display:block;">
+                            <div class="developer-experience__area">
+                                <div class="experience__grid">
+
+                                    <!-- 1 -->
+                                    <div class="experience__item" data-aos="fade-up">
+                                        <h2 class="exp-time">
+                                            <span><i class="fa-regular fa-calendar-days"></i></span>2024
+                                        </h2>
+                                        <h3 class="exp-title">Recycling Activity Participant</h3>
+                                        <h4 class="company">Centro ¡Supérate!</h4>
+                                        <p>Participated in an environmental recycling initiative promoting sustainability and responsible waste management.</p>
+                                    </div>
+
+                                    <!-- 2 -->
+                                    <div class="experience__item" data-aos="fade-up" data-aos-delay="300">
+                                        <h2 class="exp-time">
+                                            <span><i class="fa-regular fa-calendar-days"></i></span>2024 - Present
+                                        </h2>
+                                        <h3 class="exp-title">Volunteer</h3>
+                                        <h4 class="company">TECHO Organization</h4>
+                                        <p>Collaborated in community support activities aimed at improving living conditions for vulnerable families.</p>
+                                    </div>
+
+                                 
+
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- ---------------- EDUCATION ---------------- -->
+                        <div class="developer-resume-tab-box" id="resume-tab-2">
+                            <div class="developer-experience__area">
+                                <div class="experience__grid">
+
+                                    <div class="experience__item">
+                                        <h2 class="exp-time">
+                                            <span><i class="fa-regular fa-calendar-days"></i></span>Present
+                                        </h2>
+                                        <h3 class="exp-title">Academic Studies</h3>
+                                        <h4 class="company">Escuela Secundaria Pedro Pablo Sánchez</h4>
+                                        <p></p>
+                                    </div>
+
+                                    <div class="experience__item">
+                                        <h2 class="exp-time">
+                                            <span><i class="fa-regular fa-calendar-days"></i></span>Present
+                                        </h2>
+                                        <h3 class="exp-title">Academic Excellence Program</h3>
+                                        <h4 class="company">Centro ¡Supérate! Alberto Motta — La Chorrera</h4>
+                                        <p></p>
+                                    </div>
+
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- ---------------- SKILLS ---------------- -->
+                        <div class="developer-resume-tab-box" id="resume-tab-3">
+                            <div class="developer-skill_grid">
+
+                                <!-- PYTHON -->
+                                <div class="progress-items">
+                                    <div class="progress_icon">
+                                        <div class="icon"><img src="https://www.tutkit.com/storage/media/packages/337/337-programmieren-mit-python-der-anfaenger-kurs-main-med.webp" alt=""></div>
+                                    </div>
+                                    <div class="skills">
+                                        <div class="skills-items">
+                                            <div class="skill-header"><div class="skill-title">PYTHON</div></div>
+                                            <div class="skill-bar">
+                                                <div class="bar-inner">
+                                                    <div class="bar progress-line" data-width="90">
+                                                        <div class="skill-percentage">
+                                                            <div class="count-box">
+                                                                <span class="count-text" data-speed="3000" data-stop="90">0</span>
+                                                                <span class="percent">%</span>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <span class="subject">Programming</span>
+                                    </div>
+                                </div>
+
+                                <!-- EXCEL -->
+                                <div class="progress-items">
+                                    <div class="progress_icon">
+                                        <div class="icon"><img src="https://cdn2.iconfinder.com/data/icons/metro-ui-icon-set/512/Excel_15.png" alt=""></div>
+                                    </div>
+                                    <div class="skills">
+                                        <div class="skills-items">
+                                            <div class="skill-header"><div class="skill-title">EXCEL</div></div>
+                                            <div class="skill-bar">
+                                                <div class="bar-inner">
+                                                    <div class="bar progress-line" data-width="85">
+                                                        <div class="skill-percentage">
+                                                            <div class="count-box">
+                                                                <span class="count-text" data-speed="3000" data-stop="85">0</span>
+                                                                <span class="percent">%</span>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <span class="subject">Data Management</span>
+                                    </div>
+                                </div>
+
+                                <!-- WORD -->
+                                <div class="progress-items">
+                                    <div class="progress_icon">
+                                        <div class="icon"><img src="https://cdn.vectorstock.com/i/500p/48/63/microsoft-word-icon-vector-56334863.jpg" alt=""></div>
+                                    </div>
+                                    <div class="skills">
+                                        <div class="skills-items">
+                                            <div class="skill-header"><div class="skill-title">WORD</div></div>
+                                            <div class="skill-bar">
+                                                <div class="bar-inner">
+                                                    <div class="bar progress-line" data-width="95">
+                                                        <div class="skill-percentage">
+                                                            <div class="count-box">
+                                                                <span class="count-text" data-speed="3000" data-stop="95">0</span>
+                                                                <span class="percent">%</span>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <span class="subject">Documentation</span>
+                                    </div>
+                                </div>
+
+                            </div>
+                        </div>
+
+                        <!-- ---------------- AWARDS ---------------- -->
+                        <div class="developer-resume-tab-box" id="resume-tab-4">
+                            <div class="developer-award__grid">
+
+                                <!-- TOEIC 2023 -->
+                                <div class="award__item">
+                                    <h2 class="award__date">2023</h2>
+                                    <img src="images/1_1.png" alt="Award Image">
+                                    <h3 class="award__title">TOEIC Listening & Reading Test</h3>
+                                    <h4 class="award__status">Certified</h4>
+                                </div>
+
+                                <!-- EXCEL 2024 -->
+                                <div class="award__item">
+                                    <h2 class="award__date">2024</h2>
+                                    <img src="images/2_2.png" alt="Award Image">
+                                    <h3 class="award__title">Microsoft Office Specialist: Excel Expert (2016)</h3>
+                                    <h4 class="award__status">Certified</h4>
+                                </div>
+
+                                <!-- PYTHON 2025 -->
+                                <div class="award__item">
+                                    <h2 class="award__date">2025</h2>
+                                    <img src="images/3.png" alt="Award Image">
+                                    <h3 class="award__title">IT Specialist – Python</h3>
+                                    <h4 class="award__status">Certified</h4>
+                                </div>
+
+                              
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+
+            <!-- marquee-section -->
+            <div class="marquee-section">
+                <div class="container-fluid p-0 overflow-hidden">
+                    <div class="slider__marquee clearfix marquee-wrap">
+                        <ul class="marquee_mode marquee__group">
+                            <li class="item m-item"><span>*</span> Empathy</li>
+                            <li class="item m-item"><span>*</span> Adaptability</li>
+                            <li class="item m-item"><span>*</span> Organization</li>
+                            <li class="item m-item"><span>*</span> Resilience</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+
+            <!-- service-section -->
+
+            <!-- portfolio-section -->
+           <section class="portfolio-section space" id="portfolio">
+    <div class="container">
+        <div class="row">
+            <div class="col-lg-12">
+                <div class="title-area text-center">
+                    <div class="sub-title"><i class="icon fa-brands fa-gg"></i>Portfolio</div>
+                    <h2 class="sec-title">Crafting a Journey of Growth,<br> Skills, and Purpose</h2>
+                </div>
+            </div>
+        </div>
+        <div class="row">
+            <!-- Filter buttons -->
+            <div class="portfolio-filter-buttons mb-40">
+                <ul class="menu-filtering">
+                    <li class="active" data-filter="*"> View All </li>
+                    <li data-filter=".working"> Working </li>
+                    <li data-filter=".volunteer"> Volunteer</li>
+                    <li data-filter=".personal"> Personal Life </li>
+                </ul>
+            </div>
+        </div>
+        <div class="row gy-30 image_load">
+            <!-- Imagen 1: Construction work -->
+            <div class="col-lg-4 col-md-6 col-sm-6 grid-item working">
+                <div class="pdesigner-portfolio__item">
+                    <a href="portfolio-details.html">
+                        <img src="images/voluntario.jpeg" alt="Construction Project">
+                    </a>
+                    <div class="pdesigner-portfolio__content">
+                        <ul>
+                            <li><a href="portfolio-details.html" class="pdesigner-portfolio__title">Construction Project</a></li>
+                            <li><a href="#" class="pdesigner-portfolio__category">Working</a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            
+         
+            
+            <!-- Imagen 3: Friends photo -->
+            <div class="col-lg-4 col-md-6 col-sm-6 grid-item personal">
+                <div class="pdesigner-portfolio__item">
+                    <a href="portfolio-details.html">
+                        <img src="images/amigas.jpeg" alt="Friendship Moments">
+                    </a>
+                    <div class="pdesigner-portfolio__content">
+                        <ul>
+                            <li><a href="portfolio-details.html" class="pdesigner-portfolio__title">Friendship Moments</a></li>
+                            <li><a href="#" class="pdesigner-portfolio__category">Personal Life</a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            
+            <!-- Imagen 4: Group selfie -->
+            <div class="col-lg-4 col-md-6 col-sm-6 grid-item personal volunteer">
+                <div class="pdesigner-portfolio__item">
+                    <a href="portfolio-details.html">
+                        <img src="images/trabajo.jpeg" alt="Team Spirit">
+                    </a>
+                    <div class="pdesigner-portfolio__content">
+                        <ul>
+                            <li><a href="portfolio-details.html" class="pdesigner-portfolio__title">Team Spirit</a></li>
+                            <li><a href="#" class="pdesigner-portfolio__category">Personal Life</a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            
+            <!-- Imagen 5: Expo Tech group -->
+            <div class="col-lg-4 col-md-6 col-sm-6 grid-item working">
+                <div class="pdesigner-portfolio__item">
+                    <a href="portfolio-details.html">
+                        <img src="images/expo.jpeg" alt="Expo Tech Event">
+                    </a>
+                    <div class="pdesigner-portfolio__content">
+                        <ul>
+                            <li><a href="portfolio-details.html" class="pdesigner-portfolio__title">Expo Tech Event</a></li>
+                            <li><a href="#" class="pdesigner-portfolio__category">Working</a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            
+      
+            
+            <!-- Imagen 7: Recycling volunteer -->
+            <div class="col-lg-4 col-md-6 col-sm-6 grid-item volunteer">
+                <div class="pdesigner-portfolio__item">
+                    <a href="portfolio-details.html">
+                        <img src="images/reciclaje.jpeg" alt="Environmental Volunteer Work">
+                    </a>
+                    <div class="pdesigner-portfolio__content">
+                        <ul>
+                            <li><a href="portfolio-details.html" class="pdesigner-portfolio__title">Environmental Initiative</a></li>
+                            <li><a href="#" class="pdesigner-portfolio__category">Volunteer</a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+            <!-- contant-section -->
+             <section class="contact-section space" id="contact">
+                <div class="container">
+                    <div class="row gy-30">
+                        <div class="col-xxl-5 col-xl-5 col-lg-6 col-md-6">
+                            <div class="contact-left">
+                                <div class="title-area">
+                                    <div class="sub-title"><i class="icon fa-brands fa-gg"></i>CONTACTS</div>
+                                    <h2 class="sec-title">Say Hello! Get in Touch</h2>
+                                    <p>Don't be afraid man! jsut say Hello!</p>
+                                </div>
+                                <div class="contact-flex">
+                                    <div class="contact-type">
+                                        <div class="icon">
+                                            <svg version="1.1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 56 56">
+                                                <circle class="btn-circle" cx="28" cy="28" r="27" fill="none" stroke="var(--black-color6)" stroke-width="2"></circle>
+                                                <circle class="btn-circle-prog" cx="28" cy="28" r="27" fill="none" stroke="var(--black-color6)" stroke-width="2"></circle>
+                                            </svg>
+                                        </div>
+                                        <div>
+                                            <h4 class="contact-name">Call Me</h4>
+                                            <a href="tel:02251398203">+507 6960-3305</a>
+                                        </div>
+                                    </div>
+                                    <div class="contact-type">
+                                        <div class="icon">
+                                            <svg version="1.1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 56 56">
+                                                <circle class="btn-circle" cx="28" cy="28" r="27" fill="none" stroke="var(--black-color6)" stroke-width="2"></circle>
+                                                <circle class="btn-circle-prog" cx="28" cy="28" r="27" fill="none" stroke="var(--black-color6)" stroke-width="2"></circle>
+                                            </svg>
+                                        </div>
+                                        <div>
+                                            <h4 class="contact-name">Send E-Mai</h4>
+                                            <a href="mailto:example@yahoo.com">odismaryk00@gmail.com</a>
+                                        </div>
+                                    </div>
+                                    <div class="contact-type">
+                                        <div class="icon">
+                                            <svg version="1.1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 56 56">
+                                                <circle class="btn-circle" cx="28" cy="28" r="27" fill="none" stroke="var(--black-color6)" stroke-width="2"></circle>
+                                                <circle class="btn-circle-prog" cx="28" cy="28" r="27" fill="none" stroke="var(--black-color6)" stroke-width="2"></circle>
+                                            </svg>
+                                        </div>
+                                        <div>
+                                            <h4 class="contact-name">Location</h4>
+                                            <p>Panama, La Chorrera<br>
+                                                </p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-xxl-7 col-xl-7 col-lg-6 col-md-6">
+                            <div class="contact-right">
+                                <div class="contact-form">
+                                    <form class="contact_form" action="https://formspree.io/f/mzbnjrnb" method="post">
+                                        <div class="input-item">
+                                            <p>Name *</p>
+                                            <input type="text" placeholder="Your Name" name="name" required="">
+                                        </div>
+                                        <div class="input-item">
+                                            <p>Email*</p>
+                                            <input type="email" placeholder="Enter E-Mail" name="email" required="">
+                                        </div>
+                                        <div class="input-item">
+                                            <p>Subject *</p>
+                                            <input type="text" placeholder="Your Subjects" name="name" required="">
+                                        </div>
+                                        <div class="input-item">
+                                            <p>Phone (optional)</p>
+                                            <input type="text" placeholder="Your Phone No." name="phone">
+                                        </div>
+                                        <div class="input-item full">
+                                            <p>Message</p>
+                                            <textarea name="Message" placeholder="Write Message..."></textarea>
+                                        </div>
+                                        <div class="input-item submit">
+                                            <button type="submit" class="submit-btn" data-loading-text="Please wait...">
+                                                <span class="btn-title">Submit Now</span>
+                                                <i class="fa-solid fa-arrow-right"></i>
+                                            </button>
+                                        </div>
+                                    </form>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+             </section>
+
+
+            <!-- footer-section -->
+            <div class="footer-section">
+                <div class="container">
+                    <div class="row">
+                        <div class="col-lg-12">
+                            <div class="footer-main">
+                                <div class="footer-text">
+                                    <p>Follow Me on Social Media</p>
+                                </div>
+                                <ul class="footer-social">
+                                    <li><a href="#"><i class="fa-brands fa-facebook-f" aria-hidden="true"></i><span>Facebook</span></a></li>
+                                    <li><a href="#"><i class="fa-brands fa-x-twitter"></i><span>Twitter</span></a></li>
+                                    <li><a href="#"><i class="fa-brands fa-linkedin" aria-hidden="true"></i><span>Linkedin</span></a></li>
+                                    <li><a href="#"><i class="fa-brands fa-dribbble" aria-hidden="true"></i><span>Dribbble</span></a></li>
+                                    <li><a href="#"><i class="fa-brands fa-pinterest-p" aria-hidden="true"></i><span>Pinterest</span></a></li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+    </div><!-- End Page Wrapper -->
+
+	<div class="scrollToTop active-progress" style="display: block;">
+        <div class="arrowUp">
+            <i class="fa-light fa-arrow-up"></i>
+        </div>
+        <div class="water" style="transform: translate(0px, 40%);">
+            <svg viewBox="0 0 560 20" class="water_wave water_wave_back">
+                <use xlink:href="#wave"></use>
+            </svg>
+            <svg viewBox="0 0 560 20" class="water_wave water_wave_front">
+                <use xlink:href="#wave"></use>
+            </svg>
+            <svg version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 560 20" style="display: none;">
+                <symbol id="wave">
+                    <path d="M420,20c21.5-0.4,38.8-2.5,51.1-4.5c13.4-2.2,26.5-5.2,27.3-5.4C514,6.5,518,4.7,528.5,2.7c7.1-1.3,17.9-2.8,31.5-2.7c0,0,0,0,0,0v20H420z" fill="#" style="transition: stroke-dashoffset 10ms linear; stroke-dasharray: 301.839, 301.839; stroke-dashoffset: 119.488px;"></path>
+                    <path d="M420,20c-21.5-0.4-38.8-2.5-51.1-4.5c-13.4-2.2-26.5-5.2-27.3-5.4C326,6.5,322,4.7,311.5,2.7C304.3,1.4,293.6-0.1,280,0c0,0,0,0,0,0v20H420z" fill="#"></path>
+                    <path d="M140,20c21.5-0.4,38.8-2.5,51.1-4.5c13.4-2.2,26.5-5.2,27.3-5.4C234,6.5,238,4.7,248.5,2.7c7.1-1.3,17.9-2.8,31.5-2.7c0,0,0,0,0,0v20H140z" fill="#"></path>
+                    <path d="M140,20c-21.5-0.4-38.8-2.5-51.1-4.5c-13.4-2.2-26.5-5.2-27.3-5.4C46,6.5,42,4.7,31.5,2.7C24.3,1.4,13.6-0.1,0,0c0,0,0,0,0,0l0,20H140z" fill="#"></path>
+                </symbol>
+            </svg>
+
+        </div>
+    </div>
+
+    <!-- Jquery -->
+    <script src="js/jquery.min.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+
+    <script src="js/swiper-bundle.min.js"></script>
+    <script src="js/marquee.min.js"></script>
+    <script src="js/jquery.fancybox.js"></script>
+    <script src="js/select2.min.js"></script>
+    <script src="js/jquery-ui.min.js"></script>
+    <script src="js/jquery.validate.min.js"></script>
+    <script src="js/jquery.appear.js"></script>
+    <script src="js/jquery.odometer.min.js"></script>
+    <script src="js/aos.js"></script>
+    <script src="js/imagesloaded.pkgd.min.js"></script>
+    <script src="js/isotope.pkgd.min.js"></script>
+    <script src="js/typed.js"></script>
+    <script src="js/splite-type.min.js"></script>
+    <script src="js/vanilla-tilt.min.js"></script>
+    <script src="js/lenis.min.js"></script>
+
+    <!-- Main Js File -->
+    <script src="js/main.js"></script>
+
+
+
+
+</body></html>
